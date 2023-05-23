@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="icon" type="image/png" href="imagens/logo-mini.png">
+
+    <title>Little Pet Shop</title>
+</head>
+
+
+
+<body> <!-- CORPO DO SITE -->
+
+    <header> <!-- TOPO DO CABEÇALHO DO SITE -->
+        <a href="index.html">
+            <img id="logo" src="imagens/logo.jpg .png" alt="logo do site" />
+        </a>
+        <nav  class="tampa">
+            <a href="index.html">HOME</a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="login.html">LOGIN</a>
+            <a href="cadastro.html">CADASTRO</a>
+            <a href="agendamento.html">AGENDAMENTO</a>
+            <a href="contato.html">CONTATO</a>
+            <a href="dashbord.html">GRÁFICOS</a>
+        </nav>
+    </header> <!-- FIM DO CABEÇALHO DO SITE -->
+
+    <div id="div-cadastro"> <!-- CONTEÚDO DO SITE (CONTAINER) -->
+        <div id="div1-cadastro">
+            <h1 id="cadastre">CADASTRE-SE</h1>
+            <div id="div2-cadastro">
+                <form id="frmRegistro1" name="frmRegistro1" action="#">
+                    <input id="inID" name="inID" class="campoForm" type="number" placeholder="ID" required />
+                    <input id="inNom" name="inNom" class="campoForm" type="text" placeholder="NomeCompleto" required />
+                    <input id="inDat" name="inDat" class="campoForm" type="date" placeholder="" />
+                    <input id="inEndereço" name="inEndereço" class="campoForm" type="text" placeholder="endereço" />
+                    <input id="inCidade" name="inCidade" class="campoForm" type="text" placeholder="cidade" />
+                    <input id="inSiglaDoEstado" name="inSiglaDoEstado" class="campoForm" type="text"
+                        placeholder="SiglaDoEstado" />
+                    <input id="inEmmail" name="inEmmail" class="campoForm" type="email"
+                        placeholder="nome@dominio.com.br" />
+                    <input id="inTelefone" name="inTelefone" class="campoForm" type="tel"
+                        placeholder="(99) 99999-9999" />
+                    <input id="inSenha" name="inSenha" class="campoForm" type="text" placeholder="Senha" />
+                    <input id="inpet" name="inpet" class="campoForm" type="text" placeholder="nome do pet" />
+                    <select id="selectt" class="campoForm" onchange="mostraroutros();">
+                        <option selected>Tipo do pet</option>
+                        <option>Cachorro</option>
+                        <option>Gato</option>
+                        <option>Aves</option>
+                        <option>Outros</option>
+                    </select>
+                    <input id="outros" type="text" placeholder="específique o animal" />
+                    <input id="inidade" name="inidade" class="campoForm" type="date" placeholder="idade do pet"
+                        onchange="mostraridade();" />
+
+                    <p id="paragrafo">...</p>
+                    <div id="frm-buttons">
+                        <button id="botao-cadastrar" type="button" onclick="aviso2();">
+                            Cadastrar
+                        </button>
+                        <button id="botao-cancelar" type="reset">
+                            Cancelar
+                        </button>
+                    </div>
+
+                    <div id="mensagem-erro"></div>
+                    <div id="mensagem-acerto"></div>
+            </div>
+
+            </form>
+
+
+        </div>
+    </div> <!-- FIM DO CONTEÚDO DO SITE (CONTAINER) -->
+
+    <footer> <!-- RODAPÉ DO SITE -->
+        <p>
+            <span>LITTLE PET SHOP</span> <br />
+            R. Evando Cesar Paschoal, 110 - Sonho Nosso V, Barra Bonita - SP, 17345-488<br />
+            Telefone: (14) 99999-9999
+        </p>
+    </footer> <!-- FIM DO RODAPÉ DO SITE -->
+
+</body> <!-- FIM DO CORPO DO SITE -->
+<script src="js/java.js"></script>
+
+</html>

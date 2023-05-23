@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="icon" type="image/png" href="imagens/logo.jpg .png">
+
+    <title>Little Pet Shop</title>
+</head>
+
+<body> <!-- CORPO DO SITE -->
+    <header> <!-- TOPO DO CABEÇALHO DO SITE -->
+        <a href="index.html">
+            <img id="logo" src="imagens/logo.jpg .png" alt="logo do site" />
+        </a>
+        <nav class="tampa">
+            <a href="index.html">HOME</a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="login.html">LOGIN</a>
+            <a href="cadastro.html">CADASTRO</a>
+            <a href="agendamento.html">AGENDAMENTO</a>
+            <a href="contato.html">CONTATO</a>
+            <a href="dashbord.html">GRÁFICOS</a>
+        </nav>
+    </header> <!-- FIM DO CABEÇALHO DO SITE -->
+
+
+    <div id="div-agendamento"> <!-- CONTEÚDO DO SITE (CONTAINER) -->
+        <h1 id="h1-agendamento">AGENDAMENTO</h1>
+
+        <div id="div-p">
+            <p><b>Encontre o melhor para o seu pet aqui! Agende um serviço conosco.</b></p>
+        </div>
+
+        <form id="div1agendamento">
+            <input id="inCLIE" name="inCLIE" class="campoForm" type="text" placeholder="Nome do cliente" />
+            <input id="inNome" name="inNome" class="campoForm" type="text" placeholder="Nome do pet" />
+            <input id="inMail" name="inMaill" class="campoForm" type="text" placeholder="nome@dominio.com.br" />
+            <input id="infone" name="infone" class="campoForm" type="number" placeholder="(99) 99999-9999" />
+            <select id="select" name="select" class="campoForm">
+                <option selected>Selecione um Serviço</option>
+                <option volue="1">Banho e Tosa</option>
+                <option volue="2">Banho e Tosa em filhotes</option>
+                <option volue="3">Banho e Tosa na tesoura</option>
+                <option volue="4">Banho e Tosa higiênico</option>
+                <option volue="5">Banho</option>
+                <option volue="6">Tosa</option>
+            </select>
+            <input id="inData" name="inData" class="campoForm" type="date" placeholder="" />
+            <input id="inhora" name="inhora" class="campoForm" type="time" placeholder="Hora" />
+            <button id="botao-agendar" type="button" onclick="aviso()">Agendar</button>
+
+            <button id="botao-cancelar" type="reset">Cancelar</button>
+        </form>
+
+        <div id="mensagem-erro"></div>
+        <div id="mensagem-acerto" class="div-tabela">
+
+            <table id="tabelaAgendar"" >
+                <thead>
+                    <tr>
+                        <td>Cliente</td>
+                        <td>Pet</td>
+                        <td>Serviço</td>
+                        <td>Data</td>
+                        <td>Horas</td>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabela">
+                   
+                </tbody>
+            </table> 
+        </div>
+
+
+
+    </div>
+    </div> <!-- FIM DO CONTEÚDO DO SITE (CONTAINER) -->
+
+    <footer> <!-- RODAPÉ DO SITE -->
+        <p>
+            <span>LITTLE PET SHOP</span> <br />
+            R. Evando Cesar Paschoal, 110 - Sonho Nosso V, Barra Bonita - SP, 17345-488<br />
+            Telefone: (14) 99999-9999
+        </p>
+    </footer> <!-- FIM DO RODAPÉ DO SITE -->
+
+</body> <!-- FIM DO CORPO DO SITE -->
+<script src="js/java.js"></script>
+
+</html>

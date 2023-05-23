@@ -1,0 +1,1557 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cambria';
+    font-size: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+h1 {
+    text-shadow: 1px 2px 4px rgb(170, 200, 255);
+}
+
+
+header {
+    background-color: #4171af;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.tampa {
+    padding: 10px 0px 10px 0px;
+    background-color: #FFA600;
+    text-align: center;
+
+
+}
+
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('../fontes/Ubuntu-Regular.ttf') format('truetype');
+}
+
+header nav {
+    align-self: flex-end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #385DA6;
+    padding: 10px 15px;
+    font-family: 'Ubuntu-Regular';
+    font-size: 17px;
+}
+
+header nav a:hover {
+    color: #ededed;
+    font-weight: bolder;
+}
+
+#titulis {
+    padding-left: 380px;
+}
+
+#um {
+    margin: 50px 0px;
+    padding-right: 20px;
+}
+
+#logo {
+    height: 150px;
+    padding: 0px 30px;
+}
+
+#img-topo {
+    height: 200px;
+}
+
+#container {
+    max-width: 1900px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 100px;
+}
+
+footer {
+    background-color: #4171AF;
+    color: white;
+    font-size: 15px;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+footer span {
+    font-size: 20px;
+    font-family: 'Ubuntu-Regular';
+    color: #000000;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ESTILIZANDO A PÁGINA INDEX.HTML */
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu-Regular';
+    font-size: 16px;
+    background-color: #FAFDF5;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border: #000;
+}
+
+header {
+    background-color: #4171af;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tampa {
+    background-color: #385DA6;
+    text-align: center;
+}
+
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    border: #000;
+    text-shadow: 1px 2px 2px black;
+}
+
+nav a:hover {
+    color: rgb(255, 170, 0);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('../fontes/Ubuntu-Regular.ttf') format('truetype');
+}
+
+header nav {
+    align-self: flex-end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+header nav a {
+    text-shadow: 1px 2px 2px #000;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-family: 'Ubuntu-Regular';
+    font-size: 17px;
+}
+
+header nav a:hover {
+    text-shadow: 1px 2px 2px #000;
+    color: #ffa600;
+    font-weight: bolder;
+}
+
+#titulis {
+    padding-left: 380px;
+}
+
+#um {
+    margin: 50px 0px;
+    padding-right: 20px;
+}
+
+#logo {
+    height: 110px;
+    padding: 0px 30px;
+    padding-bottom: 20px;
+    border-radius: 50%;
+}
+
+#ima {
+    width: 100%;
+    height: 300px;
+    background-image: url("../imagens/ima.png");
+    background-size: cover;
+}
+
+#container {
+    max-width: 1900px;
+    margin: 0;
+    text-align: center;
+    padding: 0px 100px;
+}
+
+footer {
+    background-color: #4171af;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: lighter;
+
+}
+
+footer span {
+    font-size: 20px;
+    font-family: 'Ubuntu-Regular';
+    color: #0000a0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ESTILIZANDO A PÁGINA INDEX.HTML */
+
+.slider {
+    display: block;
+    height: 300px;
+    width: 800px;
+    margin: auto;
+    margin-top: 35px;
+    position: relative;
+    border-radius: 20%;
+}
+
+#slide1 {
+    height: 300px;
+    width: 800px;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+    bottom: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+    bottom: 10px;
+
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+    bottom: 10px;
+}
+
+.slider li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+#conheca {
+    font-family: 'Ubuntu-Regular';
+    margin-left: 20px;
+}
+
+#clientes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #86baff72;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+.img-clientes {
+    width: 180px;
+    border-radius: 50%;
+    padding: 0 5px 0 5px;
+}
+
+.animais {
+    padding: 5px 10px 0 10px;
+    color: #000;
+    font-size: 18px;
+}
+
+/* ESTILIZANDO A PÁGINA LOGIN.HTML */
+
+#frm-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 30px 40px 0px 40px;
+}
+
+#frm-sobre input,
+textarea {
+    font-family: 'Cambria';
+    font-size: 16px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: solid 1px lightslategray;
+    padding: 5px;
+}
+
+button {
+    padding: 8px 40px;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Cambria';
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+
+#botao-entrar {
+    background-color: #385DA6;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#div1 {
+    background-color: #AECCE2;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 30px 450px;
+    height: 500px;
+    width: 550px;
+}
+
+#div2 {
+    padding: 10px 0px;
+    background-color: #DEE9EF;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 10px 20px;
+    font-family: 'Cambria';
+}
+
+#div3 {
+    background-color: #DEE9EF;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 10px 20px;
+    font-family: 'Cambria';
+}
+
+#esqueceu {
+    color: #221284;
+    font-family: 'Cambria';
+}
+
+#faca-login {
+    font-family: 'Ubuntu-Regular';
+    font-size: 30px;
+}
+
+#hr {
+    display: flex;
+}
+
+.hr {
+    width: 180px;
+    color: black;
+    border: 1px solid black;
+}
+
+#botao-cadastre-se {
+    background-color: #385DA6;
+    margin: 0px 0px 15px 0px;
+    color: white;
+    font-family: 'Cambria';
+}
+
+#botao-cadastre-se:hover {
+    background-color: #ffffff;
+    color: #A0C9F4;
+}
+
+/* ESTILIZANDO A PÁGINA LOGIN.HTML */
+
+
+
+#login {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#div1 {
+    background-color: #4E8ECA;
+    padding-bottom: 29px;
+}
+
+
+#div1-cadastro {
+    background-color: #AECCE2;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 30px 450px;
+    height: 800px;
+    width: 550px;
+}
+
+#div2-cadastro {
+    padding: 10px 0px;
+    background-color: #DEE9EF;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 10px 20px;
+    font-family: 'Cambria';
+}
+
+#div3-cadastro {
+    background-color: #DEE9EF;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 10px 20px;
+    font-family: 'Cambria';
+}
+
+#botao-cadastrar {
+    margin: 10px 10px 0px 0px;
+    background-color: #385DA6;
+    color: white;
+    font-family: 'Cambria';
+}
+
+#botao-cadastrar:hover {
+    background-color: #ffffff;
+    color: #A0C9F4;
+}
+
+#botao-cancelar {
+    margin: 10px 0px 0px 5px;
+    background-color: #385DA6;
+    color: white;
+    font-family: 'Cambria';
+}
+
+#botao-cancelar:hover {
+    background-color: rgb(255, 0, 0);
+    color: #ffd1d1;
+}
+
+#p-conectar {
+    font-family: 'Cambria';
+    color: #385DA6;
+    text-decoration: underline;
+}
+
+#cadastre {
+    font-family: 'Ubuntu-Regular';
+    font-size: 30px;
+}
+
+
+
+/* ESTILIZANDO A PÁGINA AGENDAMENTO.HTML */
+
+/* ESTILIZANDO A PÁGINA AGENDAMENTO.HTML */
+
+#div1agendamento {
+    text-align: center;
+    background-color: #4171AF;
+    width: 720px;
+    margin: 5px 0 10px 0;
+    padding: 0px;
+    border-radius: 5px;
+    border: solid 1px rgb(255, 255, 255);
+}
+
+
+
+#select {
+    margin: 10px 0px 10px 0px;
+    background-color:  #4E8ECA;
+    color: white;
+    font-family: 'Cambria';
+    margin-left: 300px;
+    border: 0;
+    display: block;
+    width: 100px;
+}
+
+#div-agendamento {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 80px 20px 120px;
+}
+
+#h1-agendamento {
+    font-family: 'Ubuntu-Regular';
+    margin: 50px 0px 30px 0;
+    font-size: 30px;
+}
+
+#div-p p {
+    font-family: 'Cambria';
+    font-size: 17px;
+    text-align: center;
+}
+/* MUDEI */
+#div-p {
+    background-color: #C4DEEC;
+    border-radius: 5px;
+    border: solid 1px gray;
+    width: 720px;
+    margin: 20px 300px 5px 300px;
+}
+
+#agendar {
+    background-color: #C4DEEC;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 0px 300px 5px 300px;
+    width: 720px;
+}
+
+#botao-agendar {
+    margin: 10px 0px 10px 0px;
+    background-color:  #4E8ECA;
+    color: white;
+    font-family: 'Cambria';
+    border-radius: 5px;
+}
+
+#botao-agendar:hover {
+    background-color:#ffffff;
+    color: #4E8ECA;
+}
+
+#botao-cancelar {
+    background-color:#4171AF;
+    color: white;
+    border-radius: 5px;
+}
+
+
+#tabelaAgendar{
+    border-radius: 20px;
+    width: 720px;
+    background-color: #4171AF;
+    color: white;
+}
+
+.linha{
+    border-bottom: 1px solid #333 ;    
+}
+
+.div-tabela {
+    color: rgb(11, 4, 4) !important;
+    padding: 30px 0px;
+    margin: 15px 0px;
+    display: none;
+    text-align: center;
+    border: 0px;
+}
+
+/* ESTILIZANDO A PÁGINA SOBRE.HTML */
+
+#frm-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 30px 40px 0px 40px;
+}
+
+#frm-sobre input,
+textarea {
+    font-family: 'Cambria';
+    font-size: 16px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: solid 1px lightslategray;
+    padding: 5px;
+}
+
+#conteudo-do-site {
+    width: 607px;
+    height: 200px;
+    padding-top: 200px;
+    padding-left: 113px;
+}
+
+#divImg {
+    width: 616px;
+    height: 500px;
+    top: 200px;
+    padding-left: 851px;
+    margin-top: 20px;
+}
+
+#conteudo-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0px auto;
+    height: 100vh;
+}
+
+#conteudo-sobre-texto {
+    padding-right: 220px;
+    font-size: 15px;
+}
+
+#conteudo-sobre-texto h1,
+h2 {
+    text-align: center;
+    font-family: 'Ubuntu-Regular';
+}
+
+
+/* ESTILIZANDO A PÁGINA CONTATO.HTML */
+
+#div-contato {
+    text-align: center;
+    font-family: 'Ubuntu-Regular';
+}
+
+#container1 {
+    padding: 80px;
+
+}
+
+#frm-buttons {
+    padding: 0px 30px 5px 20px;
+    text-align: center;
+}
+
+#botao-entrarr {
+    background-color: #4171AF;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+/* MUDEI */
+#botao-entrarr:hover {
+    color: #4E8ECA;
+    background-color: #C4DEEC;
+    text-align: center;
+}
+
+#entrar-em-contato {
+    background-color: #C4DEEC;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+}
+
+#entrar-em-contato h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu-Regular';
+}
+
+.mapa {
+    padding-left: 490px;
+}
+
+#img-topo {
+    height: 200px;
+}
+
+#div-cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+/*//////////////////////////////*/
+
+#frmRegistro {
+    background-color: #afd0e5;
+    padding: 20px 10px;
+}
+
+input {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 3px 5px;
+    width: 300px;
+    margin: 10px 0px;
+}
+
+.div-botoes {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+button {
+    width: 150px;
+    padding: 10px 15px;
+}
+
+#mensagem-erro {
+    background-color: #f0abaf;
+    color: red;
+    padding: 10px 15px;
+    margin: 15px 0px;
+    display: none;
+}
+
+label {
+    padding-right: 10px;
+}
+
+#canvas {
+    padding: 10px 15px;
+    margin: 15px 0px;
+    width: 100%;
+    min-height: 150px;
+}
+
+#frmCalc {
+    padding: 20px 10px;
+    display: flex;
+    margin: 10px 0px;
+}
+
+#direita,
+#esquerda {
+    width: 50%;
+    padding: 10px 10px;
+}
+
+#direita {
+    text-align: left;
+}
+
+#esquerda {
+    text-align: right;
+}
+
+/* ESTILIZANDO A PÁGINA CADASTRO.HTML */
+
+#selectt {
+    margin: 10px 0px 10px 0px;
+    background-color:  #4E8ECA;
+    color: white;
+    font-family: 'Cambria';
+    margin-left: 200px;
+    border: 0;
+    display: block;
+    width: 100px;
+}
+
+
+#login {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#div1-cadastro {
+    background-color:#4e8eca;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 30px 450px;
+   
+}
+
+#div2-cadastro {
+    padding: 10px 0px;
+    background-color: #DEE9EF;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 10px 20px;
+    font-family: 'Cambria';
+}
+
+#div3-cadastro {
+    background-color: #DEE9EF;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 10px 20px;
+    font-family: 'Cambria';
+}
+
+#botao-cadastrar {
+    margin: 10px 10px 0px 0px;
+    background-color: #385DA6;
+    color: white;
+    font-family: 'Cambria';
+}
+
+#botao-cadastrar:hover {
+    background-color: #ffffff;
+    color: #A0C9F4;
+}
+
+#botao-cancelar {
+    margin: 10px 0px 0px 5px;
+    background-color: #385DA6;
+    color: white;
+    font-family: 'Cambria';
+}
+
+#botao-cancelar:hover {
+    background-color: #4E8ECA;
+    color: #ffffff;
+}
+
+#p-conectar {
+    font-family: 'Cambria';
+    color: #385DA6;
+    text-decoration: underline;
+}
+
+#cadastre {
+    font-family: 'Ubuntu-Regular';
+    font-size: 30px;
+}
+
+#div-cadastro {
+    display: flex;
+    justify-content: center;
+}
+/* ESTILIZANDO A PÁGINA SOBRE.HTML */
+
+#frm-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 30px 40px 0px 40px;
+}
+
+#frm-sobre input,
+textarea {
+    font-family: 'Cambria';
+    font-size: 16px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: solid 1px lightslategray;
+    padding: 5px;
+}
+
+#conteudo-do-site {
+    width: 607px;
+    height: 200px;
+    padding-top: 200px;
+    padding-left: 113px;
+}
+
+#divImg {
+    width: 616px;
+    height: 500px;
+    top: 200px;
+    padding-left: 851px;
+    margin-top: 20px;
+}
+
+#conteudo-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0px auto;
+    height: 100vh;
+}
+
+#conteudo-sobre-texto {
+    padding-right: 220px;
+    font-size: 15px;
+}
+
+#conteudo-sobre-texto h1,
+h2 {
+    text-align: center;
+    font-family: 'Ubuntu-Regular';
+}
+
+/* ESTILIZANDO A PÁGINA CONTATO.HTML */
+
+#div-contato {
+    text-align: center;
+    font-family: 'Ubuntu-Regular';
+}
+
+#container1 {
+    padding: 80px;
+}
+
+#frm-buttons {
+    padding: 0px 30px 5px 20px;
+}
+
+#botao-entrarr:hover {
+    color: #ffffff;
+    background-color: #4171AF;
+}
+
+#entrar-em-contato {
+    background-color: #C4DEEC;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+}
+
+#entrar-em-contato h1 {
+    color: white;
+    font-family: 'Ubuntu-Regular';
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 230px;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.mapa {
+    padding-left: 490px;
+}
+
+#img-topo {
+    height: 200px;
+}
+
+#div-cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+#osso:hover {
+    transform: rotateZ(190deg);
+    /*para o osso virar*/
+}
+
+
+
+
+
+/* mapas */
+
+#grafico-pizza {
+    padding-top: 50px;
+    padding-right: 100px;
+    width: 600px;
+    height: 400px;
+}
+
+#grafico-cronograma {
+    padding-top: 50px;
+    padding-left: 100px;
+    width: 500px;
+    height: 400px;
+}
+
+#grafico-linha {
+    padding-bottom: 50px;
+    padding-right: 100px;
+    width: 600px;
+    ;
+    height: 400px;
+}
+
+
+#grafico-coluna {
+    padding-bottom: 50px;
+    padding-left: 100px;
+    width: 530px;
+    height: 400px;
+}
+
+#div-erro {
+    background-color: rgb(175, 3, 3);
+    padding: 20px 20px 20px 20px;
+}
+
+
+#separarGraficos {
+    display: flex;
+}
+
+#separar {
+    display: flex;
+}
+
+
+/* Responsivo */
+
+/* CELULAR */
+@media (min-width:0px) and (max-width:576px) {
+    .slider {
+        width: 300px;
+        height: 100px;
+        padding: 0px;
+
+    }
+
+    #container {
+        padding: 0px;
+    }
+
+    #anuncio {
+        padding: 0px;
+    }
+
+    .titulis {
+        font-size: 20px;
+    }
+
+    #conheca {
+        font-size: 15px;
+        padding-top: 0px;
+    }
+
+    #clientes {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        background-color: #86baff72;
+        border-radius: 30px;
+        padding-left: 90px;
+    }
+
+    .animais {
+        width: 10px;
+        display: inline-block;
+
+    }
+
+    .animais p {
+        text-align: centers;
+
+        padding-left: 70px;
+    }
+
+    #ima {
+        height: 100px;
+    }
+
+    header {
+        height: 100px;
+
+    }
+
+    #logo {
+        height: 60px;
+
+    }
+
+    .tampa {
+        height: 9vh;
+
+    }
+
+    #pat {
+        padding-left: 50px;
+    }
+
+
+
+    #conteudo-sobre {
+        flex-direction: column;
+        margin-left: 90px;
+        text-align: center;
+        margin-top: 250px;
+        margin-top: 130px;
+
+    }
+
+    #conteudo-sobre ul {
+        margin-right: 40px;
+    }
+
+    #img-petshop {
+        width: 200px;
+        margin-right: 240px;
+
+        margin-bottom: 30px;
+
+    }
+
+
+
+
+    /* graficos */
+
+    #grafico-pizza {
+        padding-top: 50px;
+        padding-right: 100px;
+        width: 380px;
+        height: 400px;
+        padding: 0;
+    }
+
+    #grafico-cronograma {
+        margin-left: 100px;
+        padding-top: 50px;
+        padding-left: 80px;
+        width: 200px;
+        height: 400px;
+        padding: 0;
+        ;
+    }
+
+    #grafico-linha {
+        padding-bottom: 50px;
+        padding-right: 20px;
+        width: 350px;
+        height: 400px;
+        padding: 0;
+        padding-bottom: 100px;
+
+    }
+
+
+    #grafico-coluna {
+        margin-left: 90px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        width: 280px;
+        height: 400px;
+        padding: 0;
+    }
+
+    #div-erro {
+        background-color: rgb(175, 3, 3);
+        padding: 20px 20px 20px 20px;
+    }
+
+
+    #separarGraficos {
+        display: block;
+    }
+
+    #separar {
+        display: block;
+    }
+
+    .titulis {
+        margin-top: 100px;
+    }
+
+
+    /* agendamento */
+
+    #div1agendamento {
+        margin: 0%;
+        width: 380px;
+    }
+
+    #div1-agendamento {
+        text-align: center;
+        background-color: #AECCE2;
+        width: 520px;
+        margin: 5px 600px 10px 300px;
+        padding: 0px;
+        border-radius: 5px;
+        border: solid 1px gray;
+
+    }
+
+    .campoForm {
+        width: 340px;
+        height: 30px;
+        padding-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 4px;
+        background-color: #DEE9EF;
+        font-family: 'Cambria';
+        text-align: left;
+
+    }
+
+    #select {
+        width: 355px;
+
+    }
+
+    #div-agendamento {
+
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+
+    #h1-agendamento {
+        font-family: 'Ubuntu-Regular';
+        padding: 50px 0px 0px 0;
+        font-size: 30px;
+    }
+
+    #div-p p {
+
+        font-family: 'Cambria';
+        font-size: 17px;
+        text-align: center;
+
+    }
+
+    #div-p {
+        margin: 0;
+        background-color: #AECCE2;
+        border-radius: 5px;
+        border: solid 1px gray;
+        width: 380px;
+
+    }
+
+    #agendar {
+        background-color: #AECCE2;
+        border-radius: 5px;
+        border: solid 1px gray;
+        margin: 0px 300px 5px 300px;
+        width: 720px;
+    }
+
+    #botao-agendar {
+        margin: 10px 0px 10px 0px;
+        background-color: #385DA6;
+        color: white;
+        font-family: 'Cambria';
+        border-radius: 5px;
+    }
+
+    #botao-agendar:hover {
+        background-color: #ffffff;
+        color: #A0C9F4;
+    }
+
+    #botao-cancelar {
+        background-color: #385DA6;
+        color: white;
+        border-radius: 5px;
+    }
+
+
+    /* login */
+    #div1 {
+        padding-bottom: 20px;
+        padding-left: 5px;
+        margin-right: 450px;
+        width: 380px;
+        margin-top: 100px;
+
+    }
+
+    #frm-email {
+        width: 250px;
+
+
+    }
+
+
+    #frm-senha {
+        width: 250px;
+    }
+
+    /* Contato */
+
+    #descricao {
+        width: 250px;
+    }
+
+    #innome {
+        width: 250px;
+    }
+
+    #container1 {
+        margin-right: 10px;
+        padding: 0;
+        padding-bottom: 20px;
+        padding-top: 50px;
+    }
+
+    #h1-contato {
+        margin-top: 200px;
+    }
+
+    .mapa {
+        margin-top: 100px;
+        padding: 0;
+    }
+
+    /* cadastro */
+
+
+
+   #div1-cadastro{
+ margin-bottom: 100px;
+ padding-bottom: 200px;
+   }
+
+   #div-cadastro{
+    margin-top: 100px;
+   }
+
+  
+
+
+
+}
+
+/* IPAD MINI  */
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    .slider {
+
+        width: 700px;
+        padding: 0px;
+    }
+
+    #container {
+
+        padding: 0px;
+        height: 1000px;
+    }
+
+
+    .img-clientes {
+        width: 100px;
+        height: 90px;
+    }
+
+    #conteudo-sobre {
+        flex-direction: column;
+        display: flex;
+    }
+
+    #conteudo-sobre-texto {
+        text-align: center;
+        width: 500px;
+        padding: 0;
+
+
+    }
+
+    #img-petshop {
+        padding: 0;
+    }
+
+    /* agendamento */
+
+    #div1agendamento {
+        width: 380px;
+        margin: 0;
+      
+
+    }
+
+    #div1-agendamento {
+        text-align: center;
+        background-color: #AECCE2;
+        width: 520px;
+        margin: 5px 600px 10px 300px;
+        padding: 0px;
+        border-radius: 5px;
+        border: solid 1px gray;
+
+    }
+
+    .campoForm {
+        width: 340px;
+        height: 30px;
+        padding-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 4px;
+        background-color: #DEE9EF;
+        font-family: 'Cambria';
+        text-align: left;
+
+    }
+
+    #select {
+        width: 355px;
+
+    }
+
+    #div-agendamento {
+
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding-left: 200px;
+    }
+
+    #h1-agendamento {
+        font-family: 'Ubuntu-Regular';
+        padding: 50px 0px 0px 0;
+        font-size: 30px;
+    }
+
+    #div-p p {
+
+        font-family: 'Cambria';
+        font-size: 17px;
+        text-align: center;
+
+    }
+
+    #div-p {
+        margin: 0;
+        background-color: #AECCE2;
+        border-radius: 5px;
+        border: solid 1px gray;
+        width: 380px;
+
+    }
+
+    #agendar {
+        background-color: #AECCE2;
+        border-radius: 5px;
+        border: solid 1px gray;
+        margin: 0px 300px 5px 300px;
+        width: 720px;
+    }
+
+    #botao-agendar {
+        margin: 10px 0px 10px 0px;
+        background-color: #385DA6;
+        color: white;
+        font-family: 'Cambria';
+        border-radius: 5px;
+    }
+
+    #botao-agendar:hover {
+        background-color: #ffffff;
+        color: #A0C9F4;
+    }
+
+    #botao-cancelar {
+        background-color: #385DA6;
+        color: white;
+        border-radius: 5px;
+    }
+
+        #h1-agendamento{
+            margin-right: 180px;
+            padding: 0;
+        }
+
+        /* graficos */
+
+        #grafico-cronograma {
+            margin-left: 100px;
+            padding-top: 50px;
+            padding-left: 80px;
+            width: 200px;
+            height: 400px;
+            padding: 0;
+        }
+
+        #grafico-coluna {
+            margin-left: 90px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+            width: 280px;
+            height: 400px;
+            padding: 0;
+        }
+
+        #grafico-linha {
+            
+            width: 350px;
+            height: 400px;
+            padding: 0;
+            padding-bottom: 100px;
+    
+        }
+
+        #grafico-pizza {
+            padding-top: 50px;
+            padding-right: 100px;
+            width: 380px;
+            height: 400px;
+            padding: 0;
+        }
+
+        /* contato */
+    
+        .mapa {
+            margin-top: 100px;
+            padding: 0;
+        }
+
+        #dentro{
+            padding-left: 20px;
+        }
+
+        /* cadastroo */
+
+        #div1-cadastro{
+           
+            padding-bottom: 200px;
+              }
+           
+              #div-cadastro{
+               margin-top: 100px;
+              }
+           
+
+        
+
+
+
+
+}
